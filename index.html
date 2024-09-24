@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/2608b4bfeb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="header" id="home">
+        <nav>
+            <div class="nav__header">
+                <div class="nav__logo">
+                    <a href="#">
+                        <img src="images/logoo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="nav__menu__btn" id="menu-btn">
+                    <i class="ri-menu-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT US</a></li>
+                <li class="nav__logo">
+                    <a href="#">
+                        <img src="images/logoo.png" alt="">
+                    </a>
+                </li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="section__container about__container" id="about">
+        <h2 class="section__header">WE CAPTURE THE MOMENTS</h2>
+        <p class="section__description">
+            Pixels Photography aims to establish a strong online presence through a custom-built website, showcasing
+            their portfolio, skills, and accomplishments to attract new clients and collaborations.
+        </p>
+        <p class="section__description">
+            Pixels Photography is a team of professional photographers with a passion for capturing stunning images that
+            tell compelling stories. With years of experience in the industry, they specialize in a wide range of
+            photography services, from portrait and event photography to commercial and artistic projects. Their work is
+            characterized by creativity, attention to detail, and a commitment to excellence.
+        </p>
+        <img src="images/logo_dark.png" alt="logo">
+    </div>
+
+    <div id="about">
+        <div class="container">
+                <div class="about-col-2">
+                    <h2 class="section__header">~About Us~</h2>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Photography</span><br>Proficient in portrait, landscape, and event photography, with an eye for detail and composition.</li>
+                                <li><span>Photo Editing</span><br>Expert in using Adobe Photoshop, Lightroom, and other photo editing software to enhance and retouch images.</li>
+                                <li><span>Lighting Techniques</span><br>Skilled in natural and studio lighting setups to achieve the desired aesthetic for various types of shoots.</li>
+                                <li><span>Team Collaboration</span><br>Capable of working with makeup artists, stylists, and other professionals to create cohesive and visually appealing photo sets.</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - Current (Lead Photographer and Studio Owner)</span><br>~Managed and operated a successful photography studio specializing in portrait, event, and commercial photography. <br>
+                                    ~Led a team of assistant photographers and editors to ensure high-quality production and client satisfaction. <br>
+                                    ~Maintained and upgraded studio equipment to stay current with industry standards. <br> <br>
+                                </li>
+                                <li><span>2018 - 2021 (Senior Photographer)</span><br>~Captured high-quality images for a variety of clients, including weddings, corporate events, and fashion shoots. <br>
+                                    ~Collaborated with clients to conceptualize and execute creative photo shoots that met their specific needs. <br>
+                                    ~Trained and mentored junior photographers in photography techniques and best practices. <br> <br>
+                                    </li>
+                                <li><span>2016 - 2018 (Assistant Photographer)</span><br>~Assisted lead photographers in setting up equipment, arranging lighting, and capturing images. <br>
+                                    ~Gained hands-on experience in portrait, event, and product photography.</li> <br> 
+                                <li><span>2014 - 2016 (Photography Intern)</span><br>~Supported the lead photographer in various shoots, gaining experience in different photography styles. <br>
+                                    ~Learned the basics of photo editing and post-production using industry-standard software.</li> 
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2016 </span><br>Diploma in Professional Photography <br>
+                                    <i>Nepal School of Photography</i></li>
+                                <li><span>2016 </span><br>Photography Workshop <br>
+                                    <i>Kathmandu Photographers' Club</i></li>
+                                <li><span>2014 
+                                </span><br>Bachelor of Fine Arts (BFA) in Photography <br>
+                                <i>Tribhuvan University, Kathmandu</i> </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="section__container portfolio__container">
+        <h2 class="section__header">~PORTFOLIO~</h2>
+        <div class="portfolio__grid">
+            <div class="portfolio__card">
+                <img src="images/portfolio1.png" alt="portfolio" />
+                <div class="portfolio__content">
+                    <button class="btn">VIEW PORTFOLIO</button>
+                </div>
+            </div>
+            <div class="portfolio__card">
+                <img src="images/portfolio2.jpg" alt="portfolio" />
+                <div class="portfolio__content">
+                    <button class="btn">VIEW PORTFOLIO</button>
+                </div>
+            </div>
+            <div class="portfolio__card">
+                <img src="images/portfolio3.jpg" alt="portfolio" />
+                <div class="portfolio__content">
+                    <button class="btn">VIEW PORTFOLIO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="service" id="service">
+        <div class="section__container service__container">
+            <h2 class="section__header">~SERVICES~</h2>
+            <p class="section__description">
+                At Pixels, we provide a variety of expert photography services that are customized to suit your
+                individual requirements. We are dedicated to delivering exceptional quality and originality, going above
+                and beyond to surpass your expectations. Our goal is to create stunning images that authentically and
+                passionately portray your story.
+            </p>
+        </div>
+            <div class="container">
+                <div class="services-list">
+                    <div>
+                        <h4>Potrait Sessions</h4>
+                        <p>
+                            Our Potrait sessions are designed to showcase your personality and style in stunning imagery.
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <h4>Maternity Sessions</h4>
+                    <p>
+                        Embrace the beauty and miracle of new life with our maternity and newborn photography sessions.
+                    </p>
+                            consequuntur vitae accusamus impedit tenetur ratione?</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <h4>Family Sessions</h4>
+                    <p>
+                        Cherish the bond of family with our custom-designed playful candid moments and potrait sessions.
+                    </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section class="section__container client__container" id="client">
+        <h2 class="section__header">~ TESTIMONIALS ~</h2>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="client__card">
+                        <img src="images/review3.jpg" alt="client" />
+                        <p>
+                            Our family portrait session with Pixel Photography was fantastic. They managed to capture
+                            our family's personality perfectly. The kids had a great time, and the photos turned out to
+                            be wonderful keepsakes. We will cherish them forever!
+                        </p>
+                        <h4>
+                            Janak
+                        </h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client__card">
+                        <img src="images/review2.jpg" alt="client" />
+                        <p>
+                            Pixel Photography captured my essence beautifully. The photographer was patient and made me
+                            feel at ease throughout the session. The final portraits were stunning and exceeded my
+                            expectations. Highly recommend for professional portraits!
+                        </p>
+                        <h4>
+                            Johna D.
+                        </h4>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="client__card">
+                        <img src="images/review1.jpg" alt="client" />
+                        <p>
+                            Capturer exceeded all our expectations! Their attention to
+                            detail and ability to capture the essence of our special day was
+                            truly remarkable. Every time we look at our wedding photos,
+                            we're transported back to those magical moments. Thank you for
+                            preserving our memories so beautifully!
+                        </p>
+                        <h4>Sarah and Michael</h4>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="section__container gallery__container">
+        <h2 class="section__header">~GALLERY~</h2>
+        <div class="gallery__grid">
+            <img src="images/assets1.jpg" alt="gallery" />
+            <img src="images/assets.jpeg" alt="gallery" />
+            <img src="images/assets2.jpg" alt="gallery" />
+            <img src="images/assets3.jpg" alt="gallery" />
+            <img src="images/assets4.jpg" alt="gallery" />
+            <img src="images/assets5.jpg" alt="gallery" />
+            <img src="images/assets6.jpg" alt="gallery" />
+            <img src="images/assets7.jpg" alt="gallery" />
+        </div>
+        <div class="gallery__btn">
+            <button class="btn">VIEW GALLERY</button>
+        </div>
+    </section>
+
+    <section class="blog" id="blog">
+        <div class="section__container blog__container">
+            <div class="blog__content">
+                <h2 class="section__header">~ LATEST BLOG ~</h2>
+                <h4>Capturing Emotion in Every Frame</h4>
+                <p>
+                    This blog post delves into the importance of storytelling in
+                    photography and how Capturer approaches capturing emotion and
+                    narrative in their work. Readers will discover the techniques and
+                    strategies used by professional photographers to evoke emotion,
+                    convey meaning, and create compelling visual narratives that
+                    resonate with viewers on a deep level.
+                </p>
+                <div class="blog__btn">
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section__container instagram__container">
+        <h2 class="section__header">~INSTAGRAM~</h2>
+        <div class="instagram__flex">
+            <img src="images/assets1.jpg" alt="instagram" />
+            <img src="images/assets.jpeg" alt="instagram" />
+            <img src="images/assets2.jpg" alt="instagram" />
+            <img src="images/assets3.jpg" alt="instagram" />
+            <img src="images/assets4.jpg" alt="instagram" />
+            <img src="images/assets5.jpg" alt="instagram" />
+            <img src="images/assets6.jpg" alt="instagram" />
+            <img src="images/assets7.jpg" alt="instagram" />
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="section__container footer__container">
+            <div class="footer__col">
+                <img src="images/logo_dark.png" alt="logo" />
+            </div>
+            <div class="footer__col">
+                <h4>Contact Us</h4>
+            <div class="contact__us">
+                <p><i class="fa-solid fa-paper-plane"> </i> contact@gmail.com </p>
+                <p><i class="fa-solid fa-phone"> </i> 012334647 </p>
+            </div>
+                <div class="footer__socials">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+            <div class="footer__col">
+                <h4>STAY IN TOUCH</h4>
+                <p>
+                    Keep up-to-date with all things Capturer! Join our community and
+                    never miss a moment!
+                </p>
+            </div>
+        </div>
+        <div class="footer__bar">
+            Copyright © 2024 Web Design . All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
